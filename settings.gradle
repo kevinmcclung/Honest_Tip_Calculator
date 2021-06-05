@@ -1,0 +1,2 @@
+rootProject.name = "Honest Tip Calculator"
+include ':app'
