@@ -20,7 +20,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#000000"
             android:text="@string/ask_bill"
+            android:textColor="#FFFFFF"
             android:textSize="34sp"
             app:autoSizeMaxTextSize="120sp"
             app:autoSizeMinTextSize="12sp"
@@ -33,7 +35,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/bill_hint"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/button"
@@ -42,6 +45,8 @@
             android:layout_weight="1"
             android:onClick="onClick"
             android:text="@string/enter"
-            app:backgroundTint="#BAA8A8" />
+            android:textColorHint="#392B2B"
+            android:textSize="20sp"
+            app:backgroundTint="#958D8D" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -158,9 +158,9 @@ public class MainActivity extends AppCompatActivity {
         rate = .05 * (.65 * friendliness + .1 * quality + .05 * speed + .15 * generosity + .05 * affordability);
         if (rate > .01 && friendliness <= 1) rate = .01;
         if (friendliness >= 5) {
-            if (rate <= .15) rate = .15;
+            if (rate <= .20) rate = .2;
         } else if (friendliness >= 3) {
-            if (rate <= .2) rate = .2;
+            if (rate <= .15) rate = .15;
         }
         tip = bill * rate;
         total = bill + tip;
