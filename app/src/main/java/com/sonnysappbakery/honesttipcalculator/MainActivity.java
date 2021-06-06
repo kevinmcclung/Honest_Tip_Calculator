@@ -59,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
             case FRIENDLINESS:
                 try {
                     bill = Double.parseDouble(answer.getText().toString());
-                    System.out.println("Bill: " + bill);
                     question.setText(R.string.ask_friendliness);
                     answer.setText(null);
                     answer.setHint(R.string.number_hint);
@@ -72,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
             case SPEED:
                 try {
                     friendliness = getInt();
-                    System.out.println("Friendliness: " + friendliness);
                     question.setText(R.string.ask_speed);
                     answer.setText(null);
                     step = Step.QUALITY;
@@ -83,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
             case QUALITY:
                 try {
                     speed = getInt();
-                    System.out.println("Speed: " + speed);
                     question.setText(R.string.ask_quality);
                     answer.setText(null);
                     step = Step.GENEROSITY;
@@ -94,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
             case GENEROSITY:
                 try {
                     quality = getInt();
-                    System.out.println("Quality: " + quality);
                     question.setText(R.string.ask_generosity);
                     answer.setText(null);
                     step = Step.AFFORDABILITY;
@@ -105,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
             case AFFORDABILITY:
                 try {
                     generosity = getInt();
-                    System.out.println("Generosity: " + generosity);
                     question.setText(R.string.ask_affordability);
                     answer.setText(null);
                     step = Step.TOTAL;
@@ -116,7 +111,6 @@ public class MainActivity extends AppCompatActivity {
             case TOTAL:
                 try {
                     affordability = getInt();
-                    System.out.println("Affordability: " + affordability);
                     button.setText(R.string.start_again);
                     calculateTip();
                     String totalDisplay = getString(R.string.display_bill)
@@ -129,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
                             + String.format(Locale.getDefault(), "%, .2f", total);
                     question.setText(totalDisplay);
                     answer.setHint(null);
+                    answer.setText(null);
                     answer.setEnabled(false);
                     step = Step.BILL;
                 } catch (Exception e) {
@@ -145,7 +140,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public int getInt() {
-        return Integer.parseInt(answer.getText().toString());
+        int myInt = Integer.parseInt(answer.getText().toString());
+        if (myInt < 1 || myInt > 5) throw new RuntimeException("Not an Integer from 1 to 5.");
+        return myInt;
     }
 
     public void calculateTip() {
