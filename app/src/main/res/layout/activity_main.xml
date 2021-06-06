@@ -35,7 +35,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/bill_hint"
-            android:inputType="textPersonName"
+            android:inputType="numberDecimal"
             android:textSize="24sp"
             android:importantForAutofill="no" />
 
@@ -47,5 +47,6 @@
             android:onClick="onClick"
             android:text="@string/enter"
             app:backgroundTint="#000000" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
