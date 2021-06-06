@@ -36,8 +36,7 @@
             android:ems="10"
             android:hint="@string/bill_hint"
             android:inputType="textPersonName"
-            android:textSize="24sp"
-            android:autofillHints="" />
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/button"
@@ -46,8 +45,6 @@
             android:layout_weight="1"
             android:onClick="onClick"
             android:text="@string/enter"
-            android:textColorHint="#392B2B"
-            android:textSize="20sp"
-            app:backgroundTint="#958D8D" />
+            app:backgroundTint="#000000" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
