@@ -137,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayError() {
         Toast.makeText(this, getString(R.string.invalid), Toast.LENGTH_SHORT).show();
+        answer.setText(null); //erases invalid input from screen
     }
 
     public int getInt() {
