@@ -2,7 +2,7 @@
     <string name="app_name">Honest Tip Calculator</string>
     <string name="enter">ENTER</string>
     <string name="start_again">START AGAIN</string>
-    <string name="ask_bill">Enter your bill as a decimal like 70.00, 150.25 or 19855.00, for example. No currency symbols, commas, spaces or other characters, please. Must contain decimal.</string>
+    <string name="ask_bill">How much is your bill?</string>
     <string name="bill_hint">Enter Bill: </string>
     <string name="ask_friendliness">How friendly was the service? Enter a number from 1 to 5. 1 is least friendly and 5 is most friendly.</string>
     <!--number_hint will be used for the remaining questions.-->
