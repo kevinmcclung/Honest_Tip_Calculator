@@ -36,7 +36,8 @@
             android:ems="10"
             android:hint="@string/bill_hint"
             android:inputType="textPersonName"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:importantForAutofill="no" />
 
         <Button
             android:id="@+id/button"
