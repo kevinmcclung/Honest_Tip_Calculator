@@ -4,13 +4,13 @@
     <string name="start_again">START AGAIN</string>
     <string name="ask_bill">How much is your bill?</string>
     <string name="bill_hint">Enter Bill: </string>
-    <string name="ask_friendliness">How friendly was the service? Enter a number from 1 to 5. 1 is least friendly and 5 is most friendly.</string>
+    <string name="ask_friendliness">How friendly was the service? Enter a number from 1 (least friendly) to 5 (friendliest).</string>
     <!--number_hint will be used for the remaining questions.-->
     <string name="number_hint">Enter Number from 1 to 5: </string>
-    <string name="ask_speed">How fast was the service for this kind of restaurant? Enter a number from 1 to 5. 1 is the worst and 5 is the best.</string>
-    <string name="ask_quality">How good was the food? Enter a number from 1 to 5. 1 is the worst and 5 is the best.</string>
-    <string name="ask_generosity">How generous are you? Enter a number from 1 to 5. 1 is the least generous and 5 is the most generous.</string>
-    <string name="ask_affordability">How much of a tip can you afford to pay? Enter a number from 1 to 5. 1 is the least and 5 is the most.</string>
+    <string name="ask_speed">How fast was the service for this kind of restaurant? Enter a number from 1 (slowest) to 5 (fastest).</string>
+    <string name="ask_quality">How good was the food? Enter a number from 1 (worst) to 5 (best).</string>
+    <string name="ask_generosity">How generous are you? Enter a number from 1 (most selfish) to 5 (most generous).</string>
+    <string name="ask_affordability">How much of a tip can you afford to pay? Enter a number from 1 (least) to 5 (most).</string>
     <string name="display_bill">Your bill: </string>
     <string name="recommend_tip">Your recommended tip is </string>
     <string name="recommend_total">Your recommended total is </string>
