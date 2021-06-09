@@ -37,7 +37,7 @@
             android:hint="@string/bill_hint"
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
-            android:textColor="#8D8D8D"
+            android:textColor="#2596be"
             android:textColorHint="#8D8D8D"
             android:textSize="34sp" />
 
