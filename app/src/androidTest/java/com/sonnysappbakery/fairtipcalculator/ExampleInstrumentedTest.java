@@ -1,4 +1,4 @@
-package com.sonnysappbakery.honesttipcalculator;
+package com.sonnysappbakery.fairtipcalculator;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.sonnysappbakery.honesttipcalculator", appContext.getPackageName());
+        assertEquals("com.sonnysappbakery.fairtipcalculator", appContext.getPackageName());
     }
 }

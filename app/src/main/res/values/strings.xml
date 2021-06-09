@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Honest Tip Calculator</string>
+    <string name="app_name">Fair Tip Calculator</string>
     <string name="enter">ENTER</string>
     <string name="start_again">START AGAIN</string>
     <string name="ask_bill">How much is your bill?</string>
