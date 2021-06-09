@@ -20,9 +20,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#f7be57"
+            android:background="#707070"
             android:text="@string/ask_bill"
-            android:textColor="#EDE7E3"
+            android:textColor="#f6bd60"
             android:textSize="34sp"
             app:autoSizeMaxTextSize="120sp"
             app:autoSizeMinTextSize="12sp"
@@ -38,7 +38,7 @@
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
             android:textColor="#2596be"
-            android:textColorHint="#8D8D8D"
+            android:textColorHint="#2596be"
             android:textSize="34sp" />
 
         <Button
@@ -46,11 +46,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#707070"
             android:onClick="onClick"
             android:text="@string/enter"
-            android:textColor="#EDE7E3"
+            android:textColor="#f6bd60"
             android:textSize="34sp"
-            app:backgroundTint="#f7be57" />
+            app:backgroundTint="#707070" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
