@@ -1,4 +1,4 @@
-package com.sonnysappbakery.fairtipcalculator;
+package com.sonnysappbakery.honesttipcalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
