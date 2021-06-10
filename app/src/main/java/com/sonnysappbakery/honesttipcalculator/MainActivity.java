@@ -2,10 +2,14 @@ package com.sonnysappbakery.honesttipcalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
     double tip;
     double total;
 
+    //EditText in the middle will disappear when total is displayed and reappear when app restarted.
+    LinearLayout.LayoutParams layoutParamsInvisible = new LinearLayout.LayoutParams(0, 0, 0f);
+    LinearLayout.LayoutParams layoutParamsVisible = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT, 1f);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,9 +59,12 @@ public class MainActivity extends AppCompatActivity {
             case BILL:
                 button.setText(R.string.enter);
                 question.setText(R.string.ask_bill);
-                answer.setEnabled(true);
-                answer.setText(null);
+                answer.setLayoutParams(layoutParamsVisible);
                 answer.setHint(R.string.bill_hint);
+                answer.setText(null);
+                //resets button color
+                button.setBackgroundColor(Color.parseColor("#707070"));
+                button.setTextColor(Color.parseColor("#f6bd60"));
                 step = Step.FRIENDLINESS;
                 break;
             case FRIENDLINESS:
@@ -122,9 +133,11 @@ public class MainActivity extends AppCompatActivity {
                             + " "
                             + String.format(Locale.getDefault(), "%, .2f", total);
                     question.setText(totalDisplay);
-                    answer.setHint(null);
-                    answer.setText(null);
-                    answer.setEnabled(false);
+                    //make EditText temporarily disappear
+                    answer.setLayoutParams(layoutParamsInvisible);
+                    //temporarily change button color
+                    button.setBackgroundColor(0);
+                    button.setTextColor(Color.parseColor("#2596be"));
                     step = Step.BILL;
                 } catch (Exception e) {
                     displayError();
